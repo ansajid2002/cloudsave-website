@@ -1,39 +1,33 @@
 import React from 'react'
-
-
-const data = [
-    {
-
-    }
-]
+import { MdDoubleArrow } from 'react-icons/md'
 
 
 
-
+ 
 const Leftrightsectiontwo = () => {
   return (
-     <div className=" relative  px-4 mx-2  ">
+     <div className=" relative  px-3  ">
             {/* Decorative elements */}
 
 
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[52%,40%] justify-between border py-14 bg-gradient-to-l from-secondary/60 via-secondary/50 to-black/70 rounded-3xl  innercontainer mx-auto ">
+            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[52%,40%] justify-between border py-6 md:py-14 bg-gradient-to-l from-secondary/60 via-secondary/50 to-black/70 rounded-3xl  innercontainer mx-auto ">
                 <div className="relative order-2 lg:order-2 ">
                     {/* Analytics Graph */}
-                    <div data-aos="fade-right" className="absolute -left-8 -bottom-10 bg-white border z-20 p-2 rounded-3xl  ">
+                    <div data-aos="fade-right" className="absolute -left-6 md:-left-8 -bottom-10 bg-white border z-20 p-2 rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
                                 src="/home/smalldashboard.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[300px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[160px] md:max-w-[300px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
-                    <div className="absolute -left-20 -top-10  z-20  rounded-3xl  ">
+                    <div className="absolute -left-8 md:-left-20 -top-10  z-20  rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
                                 src="/home/pattern1.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[130px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[100px] md:max-w-[130px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -65,47 +59,45 @@ const Leftrightsectiontwo = () => {
 
                 <div data-aos="fade-up" className="order-1 lg:order-1">
                     <div className="space-y-6">
-                        {/* Badge */}
-                        <span variant="secondary" className="px-4 border inline rounded-full bg-white !-mb-6 font-bold text-primary  py-2  text-sm">
-                            About Siyahfy🔥
-                        </span>
+                       
 
                         {/* Heading */}
-                        <h1 className="text-4xl font-[500] tracking-tight !leading-[60px] lg:text-5xl text-white">
-                            Simple Reports & Analytics Backdown As It
+                        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
+                        Gain Deep Insights into Your Shared Files
                         </h1>
 
                         {/* Description */}
                         <p className="text-base text-gray-300 font-[500] text-muted-foreground">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use
-                        </p>
+                        With CloudSave, you can track and manage your shared files effortlessly. Our detailed analytics provide:</p>
 
                         {/* Feature List */}
                         <ul className="space-y-4 text-white">
                             <li data-aos="fade-up" className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>With our Technological and Marketing Solutions.</span>
+                                <MdDoubleArrow size={20} className='min-w-5'/>
+                                <span className='text-[15px]'><span className='underline'>Download Statistics:</span> Monitor how many times your files have been downloaded and by whom.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="150" className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>We are trusted all over the world.</span>
+                                <MdDoubleArrow size={20} className='min-w-5'/>
+                                <span className='text-[15px]'><span className='underline'>Access Logs:</span> View timestamps and user details for every access attempt, ensuring transparency and control.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
-                                <div  className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>Start Your 14 Days Free Trials Today!</span>
+                                <MdDoubleArrow size={20} className='min-w-5'/>
+                                <span className='text-[15px]'><span className='underline'>Engagement Insights:</span> See likes, comments, and interactions on shared files within groups or teams.
+                                </span>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
+                                 <MdDoubleArrow size={20} className='min-w-5'/>
+                                <span className='text-[15px]'><span className='underline'>Link Activity:</span> Track the performance of your shared links, including expiration dates and download limits
+                                </span>
                             </li>
                         </ul>
-
+ {/* Description */}
+ <p className="text-base text-gray-300 font-[500] text-muted-foreground">
+ Stay informed and in control with CloudSave’s comprehensive insights for shared files. Whether you’re collaborating with a team or sharing with friends, we keep you updated every step of the way.</p>
                         {/* CTA Button */}
                         <div className='!mt-10'>
 
-                            <span size="lg" className="bg-primary-300 border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
+                            <span  className="bg-primary-300 cursor-pointer border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
                                 Discover More →
                             </span>
                         </div>

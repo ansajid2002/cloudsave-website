@@ -14,7 +14,7 @@ export default function HowItWorks() {
     },
     {
       step: "03",
-      title: "Install App. & Enjoy",
+      title: "Start uploading files",
       description:  <p>There are many variations<br/> of passages of Lorem</p>
     }
   ]
@@ -30,9 +30,10 @@ export default function HowItWorks() {
         </span>
         </div>
 
-        <h2 className="text-4xl md:text-5xl mt-8 font-bold text-white max-w-3xl mx-auto leading-tight">
-          Make Your Device Manage Everything For You!
-        </h2>
+        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
+        Create your simple and infinite space for your files 
+
+        </h1>
       </div>
 
       {/* Timeline Section */}

@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <div className="space-y-20">
+   <div className="space-y-16 overflow-x-hidden">
     <Homebanner/>
     <Leftrightsection />
     <Leftrightsectiontwo />

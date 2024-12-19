@@ -44,12 +44,12 @@ export default function FeaturesSection() {
           Why using our app 🔥
         </span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold max-w-4xl mx-auto mt-8 leading-tight text-white">
+        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
           Our App Is Great For Individuals, Startups And Enterprises
-        </h2>
+        </h1>
       </div>
 
-      <div className="flex flex-col pt-10  justify-between  lg:flex-row md:space-x-6 items-center gap-8 relative z-20">
+      <div className="flex flex-col md:pt-10  justify-between  lg:flex-row md:space-x-6 items-center gap-8 relative z-20">
         {/* Left Column (First Three Features) */}
         <div className="flex flex-col  space-y-8 lg:w-1/3">
           {features.slice(0, 3).map((feature) => {

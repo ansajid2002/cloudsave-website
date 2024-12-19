@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
 
-    <footer className={`border-t border-gray-300 mt-10 py-16  z-50  overflow-x-hidden text-white   mx-auto bg-[url("https://img.freepik.com/free-vector/5g-networking-technology-background-with-blue-digital-line_53876-119505.jpg?t=st=1733678248~exp=1733681848~hmac=87ee29311ad9af0bb0c9a243c2ff37f5a82b4a594035fc1b82fd97aabed8ffd3&w=900")] w-full bg-cover  bottom-0 bg-no-repeat  `}>
+    <footer className={`border-t px-4 border-gray-300 mt-10 py-16  z-50  overflow-x-hidden text-white   mx-auto bg-[url("https://img.freepik.com/free-vector/5g-networking-technology-background-with-blue-digital-line_53876-119505.jpg?t=st=1733678248~exp=1733681848~hmac=87ee29311ad9af0bb0c9a243c2ff37f5a82b4a594035fc1b82fd97aabed8ffd3&w=900")] w-full bg-cover  bottom-0 bg-no-repeat  `}>
     
       <div className="space-y-6 bg-transparent overflow-hidden container mx-auto">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[25%,15%,15%,30%] xl:grid-cols-[28%,18%,18%,30%] justify-between mx-auto ">

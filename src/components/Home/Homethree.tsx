@@ -1,13 +1,13 @@
-import { Check } from 'lucide-react'
+import { Check, CheckCheck } from 'lucide-react'
 import React from 'react'
 
 const Homethree = () => {
     return (
-        <div className=" relative  px-4 py-16 mx-auto">
+        <div className=" relative  px-3 py-16 mx-auto">
             {/* Decorative elements */} 
 
 
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[52%,45%] border py-14 bg-gradient-to-tr from-secondary via-secondary/20 to-black/80 rounded-3xl justify-center innercontainer mx-auto ">
+            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[52%,45%] border py-6 md:py-14 bg-gradient-to-tr from-secondary via-secondary/20 to-black/80 rounded-3xl justify-center innercontainer mx-auto ">
                 <div className="relative order-2 lg:order-2 ">
                     {/* Analytics Graph */}
 
@@ -34,51 +34,54 @@ const Homethree = () => {
                         <div className="mb-3">
 
                             <span variant="secondary" className="bg-purple-100 px-3 text-sm rounded-full py-1.5 text-purple-500 ">
-                                How It Work 🔥
+                                Why CloudSave 🔥
                             </span>
                         </div>
                         {/* Heading */}
-                        <h1 className="text-4xl font-bold  text-white tracking-tight !leading-[60px] lg:text-5xl">
-                            Get Benefit By Using Trending Apps
+                        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
+                        Using CloudSave comes with a host of unbeatable benefits
                         </h1>
 
                         {/* Description */}
                         <p className="text-base text-gray-300 font-[400] text-muted-foreground">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        Using CloudSave comes with a host of unbeatable benefits:
                         </p>
 
                         {/* Feature List */}
-                        <ul className="space-y-4 grid grid-cols-2 text-white">
+                        <ul className="space-y-4 grid md:grid-cols-2 text-white">
                             <li className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>Friendly Design</span>
+                            <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>No Restrictions:</span>
                             </li>
                             <li className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>Cloud Storage</span>
+                            <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>Earn Rewards:</span>
                             </li>
                             <li className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>SEO Optimized</span>
+                            <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>Seamless Streaming:</span>
                             </li>
                             <li className="flex items-center space-x-3">
-                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                                    <img src="/home/checkmarkIcon.svg" />
-                                </div>
-                                <span className='text-lg'>Strong Security</span>
+                            <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>Group Sharing Made Easy</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                              <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>Affordable Pricing Plans</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                            <CheckCheck size={20} className='min-w-5'/>
+                                <span className='  text-base md:text-lg'>Always Accessible</span>
                             </li>
                         </ul>
+                        {/* Description */}
+                        <p className="text-base text-gray-300 font-[400] text-muted-foreground">
+                        Discover a storage platform that rewards your usage while removing all the limits. Join CloudSave today and experience a truly user-focused cloud solution!</p>
 
                         {/* CTA Button */}
                         <div className='!mt-10'>
 
-                            <span size="lg" className="bg-primary-300 border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
+                            <span  className="bg-black/50 cursor-pointer border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
                                 Discover More →
                             </span>
                         </div>

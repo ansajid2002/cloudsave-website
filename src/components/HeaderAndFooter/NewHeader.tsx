@@ -41,12 +41,14 @@ const NewHeader = () => {
     <>
       <Link href={"/"} className="max-lg:hidden">
         <img
-          src="/logo/siyafy-logo.png"
-          className="w-[50px] lg:w-[200px] ml-4"
+          src="/logo/cloudsave.png"
+          className="w-[150px] lg:w-[240px] "
           alt="Siyahfy"
           onClick={() => setMobileMenu(false)}
         />
       </Link>
+
+<div className=""> 
 
       <Menu
         showCatMenu={showCatMenu}
@@ -54,17 +56,13 @@ const NewHeader = () => {
         showContactMenu={showContactMenu}
         setShowContactMenu={setShowContactMenu}
         setMobileMenu={setMobileMenu}
-      />
+        />
+        </div>
 
-      {mobileMenu && (
-        <div
-          className="max-md:hidden fixed inset-0 bg-black opacity-50 z-10"
-          onClick={() => setMobileMenu(false)} // Clicking on overlay closes the menu
-        ></div>
-      )}
+     
 
       <div
-        className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px] bg-black shadow-md transition-transform duration-700 ease-in-out`}
+        className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px] bg-white shadow-md transition-transform duration-700 ease-in-out`}
         style={{
           transform: mobileMenu ? "translateX(0)" : "translateX(100%)",
         }}
@@ -81,8 +79,8 @@ const NewHeader = () => {
       <div className="flex lg:hidden items-center gap-2 justify-between w-full lg:w-auto text-black">
         <Link href={"/"} className="block lg:hidden">
           <img
-            src="/logo/siyafy-logo.png"
-            className="w-[60px] mt-8"
+            src="/logo/cloudsave.png"
+            className="w-[150px] "
             alt="Siyahfy"
             onClick={() => setMobileMenu(false)}
           />
@@ -97,10 +95,18 @@ const NewHeader = () => {
             />
           ) : (
             <BiMenuAltRight
-              color="#fff"
-              className="text-[30px]"
-              onClick={() => setMobileMenu(true)}
-            />
+  color="#000"
+  className="text-[30px]"
+  onClick={() => {
+    setMobileMenu(true);
+    // Scroll to 20% of the page height
+    // const scrollPosition = window.innerHeight * 0.2;
+    // window.scrollTo({
+    //   top: scrollPosition,
+    //   behavior: "smooth",
+    // });
+  }}
+/>
           )}
         </div>
       </div>
@@ -111,7 +117,7 @@ const NewHeader = () => {
     <>
       {/* Fixed Header */}
       <header
-        className={`w-full overflow-x-hidden  fixed  top-0 z-50 px-5 mt-4 md:mt-10 transition-transform duration-700 ${
+        className={`w-full max-lg:hidden overflow-hidden  fixed  top-0 z-50 px-5 mt-6 md:mt-10 transition-transform duration-700 ${
           scrollDownHeader ? " opacity-0 " : " opacity-100 translate-y-0"
         }`}
       >
@@ -124,12 +130,12 @@ const NewHeader = () => {
 
       {/* Scroll-Down Header */}
       <header
-        className={`w-full fixed top-0 z-50 px-5 bg-gradient-to-r to-secondary via-purple-700 from-purple-600  shadow-md transition-transform duration-700 ${
-          scrollDownHeader ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        className={`w-full  fixed top-0 z-50 px-5 bg-white  shadow-md transition-transform lg:duration-700 ${
+          scrollDownHeader ? "translate-y-0 opacity-100" : ` lg:-translate-y-full  opacity-100 lg:opacity-0`
         }`}
       >
         <div
-          className={`sjcontainer lg:px-10 h-[9vh] md:h-[10vh] flex items-center justify-between`}
+          className={`sjcontainer  lg:px-10 h-[9vh] md:h-[10vh] flex items-center justify-between`}
         >
           {headerContent}
         </div>
