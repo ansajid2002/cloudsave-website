@@ -3,7 +3,7 @@ import React from 'react'
 const Aboutone = () => {
   return (
     <div>
-         <div className="innercontainer relative  px-4 py-24 mx-auto ">
+         <div className="innercontainer relative  py-12 md:py-24 mx-auto ">
             {/* Decorative elements */}
 
 
@@ -18,7 +18,7 @@ const Aboutone = () => {
                             <img
                                 src="/about/dashboard1.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[150px] rounded-2xl mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[80px] md:max-w-[150px] rounded-2xl mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -48,32 +48,22 @@ const Aboutone = () => {
                 <div data-aos="fade-up" className="order-1 lg:order-1">
                     <div className="space-y-6">
                         {/* Badge */}
-                        <span variant="secondary" className="px-4 !-mb-6 font-bold text-amber-500 block py-2  text-sm">
+                        <span variant="secondary" className="px-4 !-mb-6 font-bold text-gray-400 block py-2  text-sm">
                         Customizations & Analysis 🔥
                         </span>
 
                         {/* Heading */}
-                        <h1 className="text-4xl font-bold tracking-tight !leading-[60px] lg:text-5xl">
-                        Manage your Traffic Growth Easily
+                        <h1 className="text-3xl font-bold tracking-tight lg:!leading-[55px] text-white lg:text-5xl">
+                        Welcome to CloudSave, where we are redefining the future of cloud storage
                         </h1>
 
                         {/* Description */}
-                        <p className="text-base text-gray-500 font-[500] text-muted-foreground">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                        <p className="text-base md:text-lg text-gray-400 font-[500] text-muted-foreground">
+                        Founded by  <span className='font-bold underline text-gray-200'>Sahil Ansari</span> and <span className='font-bold text-gray-200 underline'>Sajid Ansari</span>, our mission is to create a world where secure, reliable, and unlimited cloud storage is accessible to everyone—for free
                         </p>
-                        <p className="text-base text-gray-500 font-[500] text-muted-foreground">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                        </p>
-
+                        
                        
-                        {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span size="lg" className="bg-amber-500 text-white px-5 text-sm py-2.5 rounded-full hover:bg-amber-700">
-                                View All Project →
-                            </span>
-                        </div>
-                        <div className='flex items-center w-[340px]  !mt-10 justify-between'>
+                        <div className='flex items-center w-[300px] text-white md:w-[340px]  !mt-10 justify-between'>
                             <div>
                                 <p className='font-bold text-xl'>56 k+</p>
                                 <p className='text-gray-500 text-base font-[500]'>Compares</p>

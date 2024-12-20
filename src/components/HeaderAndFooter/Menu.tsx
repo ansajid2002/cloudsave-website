@@ -26,12 +26,12 @@ const Menu = ({
                   className={`relative ${item.name === "About Us" && "-mb-1"} cursor-pointer font-[500] text-[15px] transition-all ease-in-out border-b-1  ${
                     isActive
                       ? "text-gray-200 border-white"
-                      : "border-transparent text-gray-300 hover:text-amber-600 group"
+                      : "border-transparent text-gray-300 hover:text-purple-600 group"
                   } pb-1`}
                 >
                   <Link href={item?.url}>{item.name}</Link>
                   <span
-                    className={`absolute bottom-0 left-1/2 h-[2px] bg-amber-600 transition-all ease-in-out duration-500 transform -translate-x-1/2 ${
+                    className={`absolute bottom-0 left-1/2 h-[2px] bg-purple-600 transition-all ease-in-out duration-500 transform -translate-x-1/2 ${
                       isActive
                         ? "w-full -translate-x-1/2"
                         : "w-0 group-hover:w-full"

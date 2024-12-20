@@ -1,16 +1,18 @@
 import Aboutone from '@/components/About/Aboutone'
 import Aboutthree from '@/components/About/Aboutthree'
 import Abouttwo from '@/components/About/Abouttwo'
+import Aboutvision from '@/components/About/Aboutvision'
 import Sectionbanner from '@/components/shared/Sectionbanner'
 import React from 'react'
 
 const Aboutus = () => {
   return (
-    <div className='min-h-[100vh]'>
+    <div className=''>
       <Sectionbanner title="About Us" />
         <Aboutone/>
-        <Abouttwo/>
-        <Aboutthree/>
+        <Aboutvision/>
+        {/* <Abouttwo/> */}
+        {/* <Aboutthree/> */}
     </div>
   )
 }

@@ -1,28 +1,38 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MoveRight } from "lucide-react";
 import { Flame } from "lucide-react";
 import Image from "next/image";
 import { MdDoubleArrow } from "react-icons/md";
+import Link from "next/link";
 
 // FAQ Data
 const faqData = [
   {
-    question: "Looking For A Solution To Boost Productivity?",
-    answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly."
+    question: "01. What is CloudSave?",
+    answer: " CloudSave is a SaaS platform that offers unlimited cloud storage for individuals and businesses, with features like file sharing, streaming, and integrations with popular cloud services."
   },
   {
-    question: "Need An Easy Way To Manage Your Projects?",
-    answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly."
+    question: "02. Is CloudSave truly unlimited?",
+    answer: " Yes! Free for all, you can upload and store an unlimited number of files without restrictions on storage capacity. However there is premium features for the advance usage."
   },
   {
-    question: "Seeking A User-Friendly Solution For Your Team?",
-    answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly."
+    question: "03. How do I sign up for CloudSave?",
+    answer: " Visit www.cloudsave.org, click on Sign Up, and follow the simple steps to create your account."
   },
   {
-    question: "Seeking A User-Friendly Solution For Your Team?",
-    answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly."
+    question: "04. Can I share files with others?",
+    answer: " Absolutely! CloudSave allows you to share files and folders with secure links. You can also share files within groups and collaborate in real time."
   },
+  {
+    question: "05. How secure is my data on CloudSave?",
+    answer: " We use advanced encryption technologies to protect your data at rest and in transit. Your privacy and security are our top priorities."
+  },
+  {
+    question: "06.  Can I integrate CloudSave with other platforms?",
+    answer: "Yes! CloudSave supports integrations with Google Drive, OneDrive, iCloud, Google Photos, and more for easy file transfers."
+  },
+
 ];
 
 export default function FAQSection() {
@@ -33,22 +43,22 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="sjcontainer py-16">
-        <div className="grid gap-x-10 md:grid-cols-[48%,48%] items-start">
-
-    <div className="  mx-auto p-6">
-      {/* Header Section */}
-      <div className="mb-8 text-center">
-        <div className="mb-4 bg-purple-100 text-purple-900 hover:bg-purple-100 inline-flex items-center px-2 py-1 rounded">
+    <div className="sjcontainer py-24">
+        <div className="mb-8 text-center">
+        <div className="mb-4 rounded-3xl bg-purple-100 text-purple-900 hover:bg-purple-100 inline-flex items-center px-4 py-1.5 ">
           <Flame className="w-4 h-4 mr-1 text-orange-500" />
-          FAQs
+          Frequently asked questions
+        <h2 className="text-xl mb-4"></h2>
         </div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
-        <p className="text-muted-foreground text-gray-300">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form.
+        <p className=" text-white text-muted-foreground text-3xl md:text-5xl font-[500]">
+        Work smarter with easy access for user..
         </p>
       </div>
+        <div className="grid gap-x-20 mt-6 md:mt-12 md:grid-cols-[40%,55%] items-start">
+
+    <div className="  mx-auto md:p-6">
+      {/* Header Section */}
+      
 
       {/* Accordion Section */}
       <div className="space-y-4">
@@ -63,18 +73,31 @@ export default function FAQSection() {
         ))}
       </div>
     </div>
-    <div className="relative">
+    <div className="relative mt-8">
 
     <div>
-        <Image src="/home/dashboard1.png" className="w-full rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard1.png" className="w-full max-w-[600px] rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
     </div>
-    <div className="absolute -bottom-8 -left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <div className="absolute bottom-2 md:-bottom-8 left-2 md:-left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
 
-        <Image src="/home/dashboard2.png" className="w-40 rounded-2xl" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard2.png" className=" w-28 md:w-40 rounded-2xl" width={800}  height={800} alt="s" />
     </div>
     </div>
 
     </div>
+    <div className="flex items-center justify-center w-full mt-20">
+          <Link href={"/faq"}>
+            <p className="py-2.5 hover:shadow-md text flex items-center  hover:opacity-90 px-6 bg-gradient-to-r from-secondary to-purple-700 gap-1 lg:gap-2 text-xl  text-white rounded-md">
+              Browse More FAQ's
+              <MoveRight
+                size={18}
+                className="mt-1"
+                strokeWidth={1}
+                color="#fff"
+              />
+            </p>
+          </Link>
+        </div>
     </div>
 
   );
@@ -100,7 +123,7 @@ function AccordionItem({
         onClick={onClick}
         aria-expanded={isOpen}
       >
-        <span className="font-medium text-gray-100">{question}</span>
+        <span className=" text-gray-200 font-[600] text-lg">{question}</span>
         <MdDoubleArrow
           className={`w-5 h-5 text-purple-500 transition-transform duration-200 ${
             isOpen ? "transform rotate-90" : ""
@@ -116,8 +139,12 @@ function AccordionItem({
           maxHeight: isOpen ? contentRef.current?.scrollHeight : 0
         }}
       >
-        <div className="px-6 pb-4 text-purple-200">{answer}</div>
+        <div className="px-6 pb-4 text-gray-300 font-[500]">{answer}</div>
       </div>
+
     </div>
   );
 }
+
+
+

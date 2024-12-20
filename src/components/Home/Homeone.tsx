@@ -42,7 +42,7 @@ const Homeone = () => {
                     <div className="relative z-10">
                         <div data-aos="zoom-in" className="overflow-hidden rounded-3xl relative">
                             {/* Background Element */}
-                            <div className="absolute bottom-0 bg-amber-300/40 z-0 h-[70%] w-full"></div>
+                            <div className="absolute bottom-0 bg-purple-300/40 z-0 h-[70%] w-full"></div>
 
                             {/* Foreground Image */}
                             <img 
@@ -57,7 +57,7 @@ const Homeone = () => {
                 <div data-aos="fade-up" className="order-1 lg:order-2">
                     <div className="space-y-6">
                         {/* Badge */}
-                        <span variant="secondary" className="px-4 !-mb-6 font-bold text-amber-500 block py-2  text-sm">
+                        <span variant="secondary" className="px-4 !-mb-6 font-bold text-purple-500 block py-2  text-sm">
                             About Siyahfy🔥
                         </span>
 
@@ -96,7 +96,7 @@ const Homeone = () => {
                         {/* CTA Button */}
                         <div className='!mt-10'>
 
-                            <span size="lg" className="bg-amber-500 text-white px-5 text-sm py-2.5 rounded-full hover:bg-amber-700">
+                            <span size="lg" className="bg-purple-500 text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
                                 Discover More →
                             </span>
                         </div>

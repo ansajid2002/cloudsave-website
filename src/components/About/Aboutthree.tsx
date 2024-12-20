@@ -35,18 +35,18 @@ export default function FAQSection() {
   return (
     <div className="sjcontainer py-24">
         <div className="mb-8 text-center">
-        <div className="mb-4 rounded-3xl bg-amber-100 text-amber-900 hover:bg-amber-100 inline-flex items-center px-4 py-1.5 ">
+        <div className="mb-4 rounded-3xl bg-purple-100 text-purple-900 hover:bg-purple-100 inline-flex items-center px-4 py-1.5 ">
           <Flame className="w-4 h-4 mr-1 text-orange-500" />
           How It Works
         <h2 className="text-xl mb-4"></h2>
         </div>
-        <p className="text-muted-foreground text-5xl font-[500]">
+        <p className="text-muted-foreground text-3xl md:text-5xl font-[500]">
         Work smarter with easy access for user..
         </p>
       </div>
-        <div className="grid gap-x-20 mt-12 md:grid-cols-[40%,55%] items-start">
+        <div className="grid gap-x-20 mt-6 md:mt-12 md:grid-cols-[40%,55%] items-start">
 
-    <div className="  mx-auto p-6">
+    <div className="  mx-auto md:p-6">
       {/* Header Section */}
       
 
@@ -63,14 +63,14 @@ export default function FAQSection() {
         ))}
       </div>
     </div>
-    <div className="relative">
+    <div className="relative mt-8">
 
     <div>
-        <Image src="/home/dashboard1.png" className="w-full rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard1.png" className="w-full max-w-[600px] rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
     </div>
-    <div className="absolute -bottom-8 -left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <div className="absolute bottom-2 md:-bottom-8 left-2 md:-left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
 
-        <Image src="/home/dashboard2.png" className="w-40 rounded-2xl" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard2.png" className=" w-28 md:w-40 rounded-2xl" width={800}  height={800} alt="s" />
     </div>
     </div>
 
@@ -102,7 +102,7 @@ function AccordionItem({
       >
         <span className=" text-gray-900 font-[600] text-xl">{question}</span>
         <MdDoubleArrow
-          className={`w-5 h-5 text-amber-500 transition-transform duration-200 ${
+          className={`w-5 h-5 text-purple-500 transition-transform duration-200 ${
             isOpen ? "transform rotate-90" : ""
           }`}
         />
@@ -121,3 +121,6 @@ function AccordionItem({
     </div>
   );
 }
+
+
+

@@ -62,7 +62,7 @@ const NewHeader = () => {
      
 
       <div
-        className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px] bg-white shadow-md transition-transform duration-700 ease-in-out`}
+        className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px]  shadow-md transition-transform duration-700 ease-in-out`}
         style={{
           transform: mobileMenu ? "translateX(0)" : "translateX(100%)",
         }}
@@ -130,7 +130,7 @@ const NewHeader = () => {
 
       {/* Scroll-Down Header */}
       <header
-        className={`w-full  fixed top-0 z-50 px-5 bg-white  shadow-md transition-transform lg:duration-700 ${
+        className={`w-full   fixed top-0 z-50 px-5 bg-black  shadow-md transition-transform lg:duration-700 ${
           scrollDownHeader ? "translate-y-0 opacity-100" : ` lg:-translate-y-full  opacity-100 lg:opacity-0`
         }`}
       >

@@ -8,11 +8,11 @@ const data = [
         title:"Cloud Storage"
     },
     {
-        img:"/temp/messaging.svg",
+        img:"/temp/Messaging.svg",
         title:"Instant Messaging"
     },
     {
-        img:"/temp/folder.svg",
+        img:"/temp/Folder.svg",
         title:"File Sharing"
     },
     {
@@ -51,7 +51,7 @@ const Homebanner = () => {
                     
                             {/* <div className="inline-block">
                                 <div variant="secondary" className="rounded-full px-4 py-1 text-sm">
-                                    News! <span className="ml-2 text-amber-500">Find Your Solution 👋</span>
+                                    News! <span className="ml-2 text-purple-500">Find Your Solution 👋</span>
                                 </div>
                             </div> */}
                             <h1 className=" text-2xl   md:text-4xl  lg:text-5xl font-bold tracking-wide  leading-tight text-center lg:leading-[57px] mt-10 mb-0  ">
@@ -80,8 +80,8 @@ const Homebanner = () => {
                                
                                 </div>
                           
-                <div className="absolute top-1/4 left-4 w-4 h-4 text-amber-500">★</div>
-                <div className="absolute bottom-1/4 right-4 w-4 h-4 text-amber-500">★</div>
+                <div className="absolute top-1/4 left-4 w-4 h-4 text-purple-500">★</div>
+                <div className="absolute bottom-1/4 right-4 w-4 h-4 text-purple-500">★</div>
                 <div className="absolute top-1/2 left-1/2 w-4 h-4 text-yellow-400">★</div>
             </div>
         </div>

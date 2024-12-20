@@ -41,7 +41,7 @@ export default function FeaturesGrid() {
   ];
 
   return (
-    <div className="bg-gradient-to-tr from-amber-100 to-yellow-200">
+    <div className="bg-gradient-to-tr from-purple-100 to-yellow-200">
 
     <div className="container px-4 py-12 mx-auto">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -50,8 +50,8 @@ export default function FeaturesGrid() {
             key={index}
             className="p-6   transition-shadow"
             >
-            <div className="w-16 h-16 flex items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-green-100 shadow-md">
-              <feature.icon className="w-6 h-6 text-amber-500" />
+            <div className="w-16 h-16 flex items-center justify-center rounded-lg bg-gradient-to-br from-purple-100 to-green-100 shadow-md">
+              <feature.icon className="w-6 h-6 text-purple-500" />
             </div>
             <h3 className="text-xl font-[500] mt-4">{feature.title}</h3>
             <p className="mt-2 text-gray-500 text-sm">{feature.description}</p>

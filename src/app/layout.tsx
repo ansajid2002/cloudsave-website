@@ -19,9 +19,7 @@ export const menuData = [
 
   { name: "Home", url: "/" },
   { name: "About Us", url: "/about-us"},
-  { name: "pricing", url: "#section3" },
   { name: "Features", url: "#section3" },
-  { name: "Blogs", url: "#section4" },
   { name: "Contact Us", url: "/contact-us" },
 ];
 

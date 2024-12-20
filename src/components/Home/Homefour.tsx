@@ -5,33 +5,33 @@ export default function FeaturesSection() {
   const features = [
     {
       icon: FileStack,
-      title: "High Usability",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: "Enhanced Uploads",
+      description: "Upload files with priority speed and zero delays."
     },
     {
       icon: Bell,
-      title: "Action Reminder",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: "Exclusive Sharing Features",
+      description: "Generate secure, password-protected links for added privacy."
     },
     {
       icon: LayoutGrid,
-      title: "Merge Files",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: "Advanced Streaming Options",
+      description: "Stream content in 4K quality directly from your storage."
     },
     {
       icon: MessageCircle,
-      title: "Free Live Chat",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: "Priority Support",
+      description: "Access 24/7 premium support for faster resolutions to your queries."
     },
     {
       icon: Users,
-      title: "Social Share",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: "Coin Multipliers",
+      description: "Earn bonus coins for completing tasks, letting you redeem rewards faster."
     },
     {
       icon: Share2,
-      title: "Custom Shortcuts",
-      description: "There are many variations of passages of Lorem Ipsum"
+      title: " Exclusive Tools",
+      description: "Detailed file analytics, including audience insights for shared files."
     }
   ]
 
@@ -41,17 +41,18 @@ export default function FeaturesSection() {
         <div className='mb-4'>
 
         <span variant="secondary" className="bg-purple-100 px-4 py-1.5 rounded-full text-purple-500 font-bold ">
-          Why using our app 🔥
+        Premium Benefits – Elevate Your CloudSave Experience
+        🔥
         </span>
         </div>
-        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
-          Our App Is Great For Individuals, Startups And Enterprises
+        <h1 className=" text-3xl md:text-4xl font-[500] tracking-tight md:!leading-[55px] lg:text-5xl text-white">
+        Upgrade to CloudSave Premium and unlock exclusive features designed for power users:
         </h1>
       </div>
 
       <div className="flex flex-col md:pt-10  justify-between  lg:flex-row md:space-x-6 items-center gap-8 relative z-20">
         {/* Left Column (First Three Features) */}
-        <div className="flex flex-col  space-y-8 lg:w-1/3">
+        <div className="flex flex-col  space-y-8 lg:w-1/3 ">
           {features.slice(0, 3).map((feature) => {
             const Icon = feature.icon
             return (
@@ -71,7 +72,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Center Image */}
-        <div  className="relative w-full  my-10 transform -translate-x-4 max-w-md mx-auto lg:w-1/3">
+        <div  className="relative w-full  my-10 transform  max-w-md mx-auto lg:w-1/3">
           <div className="aspect-square rounded-full bg-purple-200 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[97%]  md:w-[130%]" />
           <div className="aspect-square rounded-full bg-purple-50 absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-[110px] md:-translate-y-[140px] w-[80%]  md:w-[100%]" />
           <img data-aos="fade-up"
