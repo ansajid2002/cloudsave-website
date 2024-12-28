@@ -21,15 +21,7 @@ const Leftrightsection = () => {
                 <div className="relative order-2 lg:order-1 ">
                    
                     {/* Analytics Graph */}
-                    <div data-aos="fade-right" className="absolute -left-6 md:-left-8 -bottom-10 bg-white border z-20 p-2 rounded-3xl  ">
-                        <div className="flex items-end space-x-2">
-                            <img
-                                src="/home/smalldashboard.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[160px] md:max-w-[300px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
+                    
                     <div className="absolute -left-8 md:-left-20 -top-10  z-20  rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
@@ -57,9 +49,9 @@ const Leftrightsection = () => {
 
                             {/* Foreground Image */}
                             <img 
-                                src="/home/women.png"
+                                src="/home/highest-security.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[350px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -105,12 +97,7 @@ const Leftrightsection = () => {
 
                         </p>
                         {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span  className="bg-primary-300 border cursor-pointer duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
-                                Discover More →
-                            </span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

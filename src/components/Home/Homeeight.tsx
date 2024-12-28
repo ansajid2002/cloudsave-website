@@ -50,7 +50,7 @@ export default function PricingTable() {
   ];
 
   return (
-    <div className="w-full py-12  bg-black text-white">
+    <div id="pricingsection" className="w-full py-12 scroll-mt-20  bg-black text-white">
       <div className="container px-4 mx-auto md:px-6">
         <div className="flex flex-col gap-8">
           {/* Header */}
@@ -81,7 +81,7 @@ export default function PricingTable() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative border border-gray-800 bg-black rounded-lg p-6 pb-12 ${
+                className={`relative border border-gray-800 bg-black rounded-2xl p-6 pb-12 ${
                   plan.highlighted ? 'ring-2 ring-purple-500' : ''
                 }`}
               >
@@ -127,7 +127,7 @@ export default function PricingTable() {
                 {/* Card Footer */}
                 <div className='absolute left-0 bottom-2 w-full'>
                   <div
-                    className={` mx-2 text-center py-2  text-sm font-medium rounded ${
+                    className={` mx-2 text-center py-2  text-sm font-medium rounded-2xl ${
                       plan.highlighted
                         ? 'bg-purple-500 text-white hover:bg-purple-600'
                         : 'bg-gray-700 text-white hover:bg-gray-800'

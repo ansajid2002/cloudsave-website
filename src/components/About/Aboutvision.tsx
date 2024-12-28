@@ -45,7 +45,7 @@ const Aboutvision = () => {
 
                                     {/* Foreground Image */}
                                     <img data-aos="fade-left"
-                                        src="https://img.freepik.com/free-vector/vision-statement-concept-illustration_114360-7456.jpg?t=st=1734660211~exp=1734663811~hmac=1ab2b27143766699d4ed578910ef27a8feeae73b0f9b99f51e03f40ca864f0a1&w=740"
+                                        src="/home/vision.svg"
                                         alt="Analytics Dashboard Preview"
                                         className="object-cover  max-w-[400px] max-auto w-full h-full relative z-10"
                                     />
@@ -96,13 +96,13 @@ const Aboutvision = () => {
 
                             {/* Main Image */}
                             <div className="relative z-10">
-                                <div className="  shadow-[0_3px_10px_rgb(0,0,0,0.2)]  relative">
+                                <div className="   shadow-[0_3px_10px_rgb(0,0,0,0.2)]  relative">
 
 
                                     {/* Foreground Image */}
                                     <img data-aos="fade-left"
-                                        src="https://img.freepik.com/premium-photo/cloud-computing-technology-database-storage-security-concept-backup-transfer_1020200-3658.jpg?w=1060"
-                                        className="object-cover  max-w-[500px] max-auto w-full h-full relative z-10"
+                                        src="/home/cslogo-black.png"
+                                        className="object-cover  max-w-[300px] mx-auto w-full h-full relative z-10"
                                     />
                                 </div>
                             </div>

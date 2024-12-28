@@ -25,8 +25,8 @@ export default function FeaturesSection() {
     },
     {
       icon: Users,
-      title: "Coin Multipliers",
-      description: "Earn bonus coins for completing tasks, letting you redeem rewards faster."
+      title: "Create Groups",
+      description: "Create groups with upto 1M+ Participants."
     },
     {
       icon: Share2,
@@ -78,7 +78,7 @@ export default function FeaturesSection() {
           <img data-aos="fade-up"
             src="/home/mockup2.png"
             alt="App Interface Preview"
-            className="relative z-10 -mb-6 w-full h-auto"
+            className="relative z-10 -mb-6 w-full max-w-[200px] mx-auto h-auto"
           />
         </div>
 

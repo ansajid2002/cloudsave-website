@@ -79,12 +79,7 @@ const Homethree = () => {
                         Discover a storage platform that rewards your usage while removing all the limits. Join CloudSave today and experience a truly user-focused cloud solution!</p>
 
                         {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span  className="bg-black/50 cursor-pointer border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
-                                Discover More →
-                            </span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -76,16 +76,16 @@ export default function FAQSection() {
     <div className="relative mt-8">
 
     <div>
-        <Image src="/home/dashboard1.png" className="w-full max-w-[600px] rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard.png" className="w-full max-w-[600px] rounded-2xl overflow-hidden" width={800}  height={800} alt="s" />
     </div>
-    <div className="absolute bottom-2 md:-bottom-8 left-2 md:-left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <div className="absolute bottom-2 md:-bottom-24 left-2 md:-left-8 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
 
-        <Image src="/home/dashboard2.png" className=" w-28 md:w-40 rounded-2xl" width={800}  height={800} alt="s" />
+        <Image src="/home/dashboard4.png" className=" w-24 md:w-36 rounded-2xl" width={800}  height={800} alt="s" />
     </div>
     </div>
 
     </div>
-    <div className="flex items-center justify-center w-full mt-20">
+    <div className="flex items-center justify-center w-full mt-12">
           <Link href={"/faq"}>
             <p className="py-2.5 hover:shadow-md text flex items-center  hover:opacity-90 px-6 bg-gradient-to-r from-secondary to-purple-700 gap-1 lg:gap-2 text-xl  text-white rounded-md">
               Browse More FAQ's

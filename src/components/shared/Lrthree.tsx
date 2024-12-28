@@ -55,9 +55,9 @@ const Leftrightsectionthree = () => {
 
                             {/* Foreground Image */}
                             <img 
-                                src="/home/women.png"
+                                src="/home/highest-security.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[350px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -103,12 +103,7 @@ const Leftrightsectionthree = () => {
                         </ul>
 
                         {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span size="lg" className="bg-primary-300 border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
-                                Discover More →
-                            </span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

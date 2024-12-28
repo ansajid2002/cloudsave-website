@@ -13,12 +13,12 @@ const Aboutone = () => {
                
                     <div className="relative order-2 lg:order-1 ">
                    
-                    <div data-aos="zoom-in" className="absolute -left-4 top-2  z-20  rounded-3xl  ">
+                    <div data-aos="zoom-in" className="absolute left-4 top-2  z-20  rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
-                                src="/about/dashboard1.png"
+                                src="/home/cslogo-black.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[80px] md:max-w-[150px] rounded-2xl mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[80px] md:max-w-[100px] rounded-2xl mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const Aboutone = () => {
                             <img data-aos="fade-left"
                                 src="/about/men1.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[350px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const Aboutone = () => {
                         </p>
                         
                        
-                        <div className='flex items-center w-[300px] text-white md:w-[340px]  !mt-10 justify-between'>
+                        {/* <div className='flex items-center w-[300px] text-white md:w-[340px]  !mt-10 justify-between'>
                             <div>
                                 <p className='font-bold text-xl'>56 k+</p>
                                 <p className='text-gray-500 text-base font-[500]'>Compares</p>
@@ -77,7 +77,7 @@ const Aboutone = () => {
                                 <p className='text-gray-500 text-base font-[500]'>Downloaded it</p>
                                 </div>
 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

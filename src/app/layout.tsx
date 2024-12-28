@@ -19,7 +19,7 @@ export const menuData = [
 
   { name: "Home", url: "/" },
   { name: "About Us", url: "/about-us"},
-  { name: "Features", url: "#section3" },
+  { name: "Pricing", url: "/#pricingsection" },
   { name: "Contact Us", url: "/contact-us" },
 ];
 

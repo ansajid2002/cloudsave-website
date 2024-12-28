@@ -13,15 +13,7 @@ const Leftrightsectiontwo = () => {
             <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[52%,40%] justify-between border py-6 md:py-14 bg-gradient-to-l from-secondary/60 via-secondary/50 to-black/70 rounded-3xl  innercontainer mx-auto ">
                 <div className="relative order-2 lg:order-2 ">
                     {/* Analytics Graph */}
-                    <div data-aos="fade-right" className="absolute -left-6 md:-left-8 -bottom-10 bg-white border z-20 p-2 rounded-3xl  ">
-                        <div className="flex items-end space-x-2">
-                            <img
-                                src="/home/smalldashboard.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[160px] md:max-w-[300px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
+                    
                     <div className="absolute -left-8 md:-left-20 -top-10  z-20  rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
@@ -49,9 +41,9 @@ const Leftrightsectiontwo = () => {
 
                             {/* Foreground Image */}
                             <img 
-                                src="/home/women.png"
+                                src="/home/Business analytics.svg"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[350px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[450px] mx-auto w-full h-full relative -mb-6 z-10"
                             />
                         </div>
                     </div>
@@ -95,12 +87,7 @@ const Leftrightsectiontwo = () => {
  <p className="text-base text-gray-300 font-[500] text-muted-foreground">
  Stay informed and in control with CloudSave’s comprehensive insights for shared files. Whether you’re collaborating with a team or sharing with friends, we keep you updated every step of the way.</p>
                         {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span  className="bg-primary-300 cursor-pointer border duration-300 border-secondary text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
-                                Discover More →
-                            </span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

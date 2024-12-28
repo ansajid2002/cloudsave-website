@@ -10,15 +10,7 @@ const Homeone = () => {
             <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[40%,60%]  justify-center innercontainer mx-auto ">
                 <div className="relative order-2 lg:order-1 ">
                     {/* Analytics Graph */}
-                    <div data-aos="fade-right" className="absolute -left-8 -bottom-10 bg-white border z-20 p-2 rounded-3xl  ">
-                        <div className="flex items-end space-x-2">
-                            <img
-                                src="/home/smalldashboard.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[300px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
+                    
                     <div className="absolute -left-20 -top-10  z-20  rounded-3xl  ">
                         <div className="flex items-end space-x-2">
                             <img
@@ -46,9 +38,9 @@ const Homeone = () => {
 
                             {/* Foreground Image */}
                             <img 
-                                src="/home/women.png"
+                                src="/home/highest-security.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[350px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -93,13 +85,7 @@ const Homeone = () => {
                             </li>
                         </ul>
 
-                        {/* CTA Button */}
-                        <div className='!mt-10'>
-
-                            <span size="lg" className="bg-purple-500 text-white px-5 text-sm py-2.5 rounded-full hover:bg-purple-700">
-                                Discover More →
-                            </span>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

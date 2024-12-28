@@ -1,5 +1,6 @@
 import Downloadapp from "@/components/Home/Downloadapp";
 import Homebanner from "@/components/Home/Homebanner";
+import Homebanner2 from "@/components/Home/Homebanner2";
 import Homeeight from "@/components/Home/Homeeight";
 import Homefive from "@/components/Home/Homefive";
 import FeaturesSection from "@/components/Home/Homefour";
@@ -26,11 +27,12 @@ export default function Home() {
     {/* <Leftrightsectionthree /> */}
     <Leftrightsectionfour />
     {/* <Homeone/> */}
-    <Homefive/>
+    {/* <Homefive/> */}
     <Homesix/>
-    <Homeseven/>
+    {/* <Homeseven/> */}
     <Homeeight/>
-    <Downloadapp/>
+    {/* <Downloadapp/> */}
+    <Homebanner2/>
    </div>
   );
 }

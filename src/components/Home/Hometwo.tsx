@@ -5,17 +5,17 @@ export default function HowItWorks() {
     {
       step: "01",
       title: "Download App",
-      description: <p>There are many variations<br/> of passages of Lorem</p>
+      description: <p>Get it from<br/>Appstore / Playstore</p>
     },
     {
       step: "02",
       title: "Create account",
-      description:  <p>There are many variations<br/> of passages of Lorem</p>
+      description:  <p>Signup<br/> to get started.</p>
     },
     {
       step: "03",
       title: "Start uploading files",
-      description:  <p>There are many variations<br/> of passages of Lorem</p>
+      description:  <p>Upload and manage files.<br/> </p>
     }
   ]
 
