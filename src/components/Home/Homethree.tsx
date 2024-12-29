@@ -3,7 +3,7 @@ import React from 'react'
 
 const Homethree = () => {
     return (
-        <div className=" relative  px-3 py-16 mx-auto">
+        <div className=" relative  px-3 16 mx-auto">
             {/* Decorative elements */} 
 
 
@@ -42,10 +42,7 @@ const Homethree = () => {
                         Using CloudSave comes with a host of unbeatable benefits
                         </h1>
 
-                        {/* Description */}
-                        <p className="text-base text-gray-300 font-[400] text-muted-foreground">
-                        Using CloudSave comes with a host of unbeatable benefits:
-                        </p>
+                       
 
                         {/* Feature List */}
                         <ul className="space-y-4 grid md:grid-cols-2 text-white">

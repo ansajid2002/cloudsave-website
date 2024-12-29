@@ -89,7 +89,7 @@ const Homebanner = () => {
                             <div className='grid grid-cols-2 md:grid-cols-4 my-8 md:mb-10 mb:mt-12'>
                                 {
                                      data.map((item, index) => (
-                                        <div key={index} className=" my-4 gap-4">
+                                        <div data-aos="zoom-in" key={index} className=" my-4 gap-4">
                                             <Image src={item.img} width={250} height={250} className='mx-auto w-24 sm:w-32' alt={item.title} />
                                             <p className="text-sm mt-1 md:text-lg font-light text-center">{item.title}</p>
                                         </div>
@@ -144,7 +144,7 @@ const Homebanner = () => {
 
         <div className="md:flex md:justify-center md:space-x-2 lg:space-x-10 max-md:mx-auto max-md:w-[350px] ">
       {advantages.map((advantage, index) => (
-        <div
+        <div data-aos="zoom-in"
           key={index}
           className=" p-4 text-center  space-x-4 flex items-center   shadow-sm hover:shadow-md transition-shadow"
         >

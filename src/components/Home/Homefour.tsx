@@ -41,7 +41,7 @@ export default function FeaturesSection() {
         <div className='mb-4'>
 
         <span variant="secondary" className="bg-purple-100 px-4 py-1.5 rounded-full text-purple-500 font-bold ">
-        Premium Benefits – Elevate Your CloudSave Experience
+        Premium Benefits <span className='max-md:hidden'> - Elevate Your CloudSave Experience</span>
         🔥
         </span>
         </div>

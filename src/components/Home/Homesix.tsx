@@ -43,7 +43,7 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="sjcontainer py-24">
+    <div className="sjcontainer  py-12 md:py-24">
         <div className="mb-8 text-center">
         <div className="mb-4 rounded-3xl bg-purple-100 text-purple-900 hover:bg-purple-100 inline-flex items-center px-4 py-1.5 ">
           <Flame className="w-4 h-4 mr-1 text-orange-500" />
