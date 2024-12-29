@@ -37,9 +37,9 @@ const Footer =async () => {
     <footer className={`border-t px-4 border-gray-600 mt-10 py-10  z-50  overflow-x-hidden text-white   mx-auto  w-full bg-cover  bottom-0 bg-no-repeat  `}>
     
       <div className="space-y-6 bg-transparent overflow-hidden container mx-auto">
-        <div className="flex   justify-between mx-auto ">
+        <div className="md:flex   justify-between mx-auto ">
           {/* Company Info */}
-          <div className="">
+          <div className="mb-10">
             <img
               src="/home/cslogo-black.png"
               className="mr-5 w-[60px] md:w-[90px] mb-2 "
@@ -49,21 +49,21 @@ const Footer =async () => {
           </div>
 
            {/* Legal and Support */}
-           <div className="flex-1 mx-10" >
-          <div className="w-full h-full flex items-center justify-center lg:mx-auto">
+           <div className="flex-1 mx-2 md::mx-10" >
+
            
-            <div className="space-x-5 flex items-end">
+            <div className="  md:space-x-5 md:flex  flex-wrap md::items-end">
               {allPolicies.map((item) => (
                 <Link data-aos="fade-up"
                   href={`/policies/${item.slug}`}
                   key={item.name}
-                  className="text-base block text-gray-300 font-[500] hover:text-purple-300"
+                  className=" text-sm py-2 md:py-3 md:text-base block text-gray-300 font-[500] hover:text-purple-300"
                 >
                   {item.name}
                 </Link>
               ))}
             </div>
-            </div>
+         
           </div>
 
           
