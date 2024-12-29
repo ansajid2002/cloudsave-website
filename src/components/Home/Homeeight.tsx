@@ -12,24 +12,24 @@ export default function PricingTable() {
       price: 'FREE',
       description: 'Basic storage for individuals or small businesses',
       features: [
-        'AES 256-bit Encryption',
-        '2-Factor Authentication',
-        'Direct Report & Team Review',
+        '100 MB file size',
+        'Basic file sharing links only',
+        'Standard upload speed',
       ],
-      storage: '250 GB',
+      storage: 'Infinite',
       highlighted: false,
     },
     {
       name: 'Professional',
-      price: isYearly ? '1,999 - 6,999' : '249 - 799',
+      price: isYearly ? '0.99 - 9.99' : '1.49 - 14.99',
       description: 'Advanced features for larger businesses',
       features: [
-        'AES 256-bit Encryption',
-        '2-Factor Authentication',
-        'Direct Report & Team Review',
-        'File Versioning',
+        'All free inclusive ',
+        '128GB - 256GB file size',
+        'Advanced features',
+        'Boosted Upload speed',
       ],
-      storage: '500 GB - 10 TB',
+      storage: 'Infinite',
       highlighted: true,
     },
     {
@@ -37,14 +37,14 @@ export default function PricingTable() {
       price: 'Custom',
       description: 'Fully customizable advanced plan for larger organizations',
       features: [
-        'AES 256-bit Encryption',
+        'All Free and Professional inclusive',
         '2-Factor Authentication',
         'Direct Report & Team Review',
-        'File Versioning',
-        'Remote Wipe',
+        'Group Analytics',
+        'Priority Support',
         'Dedicated Account Manager',
       ],
-      storage: "Let's discuss!",
+      storage: "Infinite",
       highlighted: false,
     },
   ];
@@ -55,25 +55,30 @@ export default function PricingTable() {
         <div className="flex flex-col gap-8">
           {/* Header */}
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold">
-              Comprehensive Performance Management
-            </h2>
-            <div className="flex items-center gap-4">
-              <span className="text-sm">Bill Monthly</span>
-              <label className="relative inline-flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="sr-only"
-                  checked={isYearly}
-                  onChange={() => setIsYearly(!isYearly)}
-                />
-                <span className="w-10 h-6 bg-gray-300 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></span>
-              </label>
-              <span className="text-sm">
-                Bill Yearly {isYearly && '(Save 25%)'}
-              </span>
-            </div>
+      <h2 className="text-3xl font-bold">Comprehensive Pricing</h2>
+      <div className="flex items-center gap-4">
+        <span  className={` ${!isYearly ? " text-white " : "text-gray-500"} text-base`}>Bill Monthly</span>
+        
+        <label className="inline-flex items-center cursor-pointer  px-2">
+          <input
+            type="checkbox"
+            value=""
+            className="sr-only peer"
+            checked={isYearly}
+            onChange={() => setIsYearly(!isYearly)}
+          />
+          <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:bg-purple-600">
+            <div
+              className={`absolute top-[2px] left-[2px] bg-white border border-gray-300 rounded-full w-5 h-5 transition-all ${
+                isYearly ? 'translate-x-5' : ''
+              }`}
+            ></div>
           </div>
+        </label>
+        
+        <span className={` ${isYearly ? " text-white" : "text-gray-500"} text-base`}>Bill Yearly</span>
+      </div>
+    </div>
 
                
           {/* Pricing Cards */}
@@ -81,7 +86,7 @@ export default function PricingTable() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative border border-gray-800 bg-black rounded-2xl p-6 pb-12 ${
+                className={`relative border-2 border-gray-800 hover:border-purple-400 duration-300 bg-black rounded-2xl p-6 pb-12 ${
                   plan.highlighted ? 'ring-2 ring-purple-500' : ''
                 }`}
               >
@@ -97,7 +102,7 @@ export default function PricingTable() {
                 <div className="mb-4">
                   <h3 className="text-lg font-bold">{plan.name}</h3>
                   <p className="text-4xl font-bold">
-                    ₹ {plan.price}{' '}
+                    $ {plan.price}{' '}
                     <span className="text-sm font-normal text-gray-400">
                       {plan.price !== 'FREE' && `/${isYearly ? 'yr' : 'mo'}`}
                     </span>
@@ -127,10 +132,10 @@ export default function PricingTable() {
                 {/* Card Footer */}
                 <div className='absolute left-0 bottom-2 w-full'>
                   <div
-                    className={` mx-2 text-center py-2  text-sm font-medium rounded-2xl ${
+                    className={` mx-2 text-center py-2  text-sm font-medium rounded-lg hover:-translate-y-1 duration-200 ${
                       plan.highlighted
                         ? 'bg-purple-500 text-white hover:bg-purple-600'
-                        : 'bg-gray-700 text-white hover:bg-gray-800'
+                        : 'bg-gray-700 hover:bg-purple-700 text-white cursor-pointer '
                     }`}
                   >
                     Choose Plan

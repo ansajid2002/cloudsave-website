@@ -1,9 +1,16 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { BsGooglePlay } from 'react-icons/bs'
 import { FaAppStoreIos } from 'react-icons/fa'
 
 const Homebanner2 = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModalToggle = () => {
+      setIsModalOpen(!isModalOpen);
+    };
     return (
         <div className='px-2 md:px-6  '>
 
@@ -18,42 +25,58 @@ const Homebanner2 = () => {
                                 </div>
                             </div>
                             <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-                                We Develop Websites, Applications, And Brands.
+                                Infinite Storage Solutions
                             </h1>
                             <p className=" text-base md:text-lg text-muted-foreground">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                                in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are
-                                going to use a passage of Lorem Ipsum.
+                               Coming soon. mark the launch date 20 January 2025 
                             </p>
-                                   <div className="flex flex-wrap gap-4">
-                              {/* Download from Play Store */}
-                              <a
-                                href="https://play.google.com/store"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-black text-white px-8 py-2.5 rounded-full hover:bg-purple-700 flex items-center gap-4"
-                              >
-                                <FaAppStoreIos size={28} />
-                                <div className="flex flex-col">
-                                  <span className="text-[12px] ">Get it on</span>
-                                  <span className="text-lg -mt-1 font-[500]">Play Store</span>
-                                </div>
-                              </a>
-                            
-                            
-                               <a
-                                href="https://play.google.com/store"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-black text-white px-8 py-2.5 rounded-full hover:bg-purple-700 flex items-center gap-4"
-                              >
-                                <BsGooglePlay size={28} />
-                                <div className="flex flex-col">
-                                  <span className="text-[12px] ">Get it on</span>
-                                  <span className="text-lg -mt-1 font-[500]">App Store</span>
-                                </div>
-                              </a>
-                            </div>
+                            <div className="flex flex-wrap gap-4">
+      {/* Download from Play Store */}
+      <div
+        // href="https://play.google.com/store"
+        // target="_blank"
+        rel="noopener noreferrer"
+        className="bg-black text-white px-8 py-2.5 rounded-full hover:bg-purple-700 flex items-center gap-4"
+        onClick={handleModalToggle}
+      >
+        <FaAppStoreIos size={28} />
+        <div className="flex flex-col">
+          <span className="text-[12px]">Get it on</span>
+          <span className="text-lg -mt-1 font-[500]">Play Store</span>
+        </div>
+      </div>
+
+      {/* Download from App Store */}
+      <div
+        // href="https://play.google.com/store"
+        // target="_blank"
+        rel="noopener noreferrer"
+        className="bg-black text-white px-8 py-2.5 rounded-full hover:bg-purple-700 flex items-center gap-4"
+        onClick={handleModalToggle}
+      >
+        <BsGooglePlay size={28} />
+        <div className="flex flex-col">
+          <span className="text-[12px]">Get it on</span>
+          <span className="text-lg -mt-1 font-[500]">App Store</span>
+        </div>
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0  bg-black bg-opacity-50 flex justify-center  items-center z-50">
+          <div  data-aos="zoom-in" data-aos-duration="500" className="bg-black  p-8 rounded-lg  max-w-sm text-center shadow-2xl border border-purple-400">
+            <h2 className="text-3xl font-semibold">Coming Soon</h2>
+            <p className="mt-4 text-gray-200">Stay tuned, the app will be available soon!</p>
+            <button
+              className="mt-6 px-8 tracking-wider py-1 bg-purple-600 text-white rounded-full hover:bg-purple-700"
+              onClick={handleModalToggle}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
 
                         </div>
                         <div className="relative h-[300px] md:h-[600px] w-[300px]  md:w-[600px]">

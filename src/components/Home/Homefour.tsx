@@ -72,13 +72,23 @@ export default function FeaturesSection() {
         </div>
 
         {/* Center Image */}
-        <div  className="relative w-full  my-10 transform  max-w-md mx-auto lg:w-1/3">
+        {/* <div  className="relative w-full  my-10 transform  max-w-md mx-auto lg:w-1/3">
           <div className="aspect-square rounded-full bg-purple-200 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[97%]  md:w-[130%]" />
           <div className="aspect-square rounded-full bg-purple-50 absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-[110px] md:-translate-y-[140px] w-[80%]  md:w-[100%]" />
           <img data-aos="fade-up"
-            src="/home/mockup2.png"
+            src="/home/cslogo.png"
             alt="App Interface Preview"
-            className="relative z-10 -mb-6 w-full max-w-[200px] mx-auto h-auto"
+            className="relative z-10 -mb-6 w-full max-md:max-w-[100px]  max-w-[200px] mx-auto h-auto"
+          />
+        </div> */}
+
+        <div  className="relative w-full   my-10 transform   scale-90  lg:w-1/3 max-w-[350px]">
+          <div className="aspect-square rounded-full bg-purple-200 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[97%]  md:w-[130%]" />
+          <div className="aspect-square rounded-full bg-purple-50 absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-[110px] md:-translate-y-[130px] w-[80%]  md:w-[100%]" />
+          <img data-aos="fade-up"
+            src="/home/cslogo.png"
+            alt="App Interface Preview"
+            className="relative z-10 max-w-[160px] py-10  md:max-w-[200px] mx-auto -mb-4 w-full h-auto"
           />
         </div>
 

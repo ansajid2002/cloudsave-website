@@ -2,10 +2,57 @@ import React from 'react'
 import { MdDoubleArrow } from 'react-icons/md'
 
 
+
+// icloud 12 TB: $59.99 usd 
+//  terabox one-month membership: $3.99/month
+// one drive Microsoft 365 Personal
+// $69.99 /year
+
+
+
 const data = [
     {
-
-    }
+        img:"/home/cslogo-black.png",
+        title:"CloudSave",
+        price:"FREE*",
+        pricedesc:"Infinite Storage",
+        pricebased:"* Free with some basic features"
+    },
+    {
+        img:"/competitors/ICloud_logo.svg",
+        title:"ICloud",
+        price:"$59.99*",
+        pricedesc:"per 12TB per month",
+        pricebased:"* Price can be vary according to apple"
+    },
+    {
+        img:"/competitors/googledrive-icon.svg",
+        title:"Drive",
+        price:"$3.86*",
+        pricedesc:"per TB per month",
+        pricebased:"* Price based on 30TB annual payment"
+    },
+    {
+        img:"/competitors/terabox.webp",
+        title:"Terabox",
+        price:"$3.99*",
+        pricedesc:"per TB per month",
+        pricebased:"* Price based on website"
+    },
+    {
+        img:"/competitors/megaicon.svg",
+        title:"Mega",
+        price:"$1.63*",
+        pricedesc:"per TB per month",
+        pricebased:"* Price based on Pro III annual payment"
+    },
+    {
+        img:"/competitors/onedrive.png",
+        title:"OneDrive",
+        price:"$69.99*",
+        pricedesc:"per 2TB per month",
+        pricebased:"* Price based on website"
+    },
 ]
 
 
@@ -13,88 +60,36 @@ const data = [
 
 const Leftrightsectionfour = () => {
   return (
-     <div className=" relative  px-4   ">
+     <div className=" relative  px-4 sjcontainer   ">
             {/* Decorative elements */}
 
-
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-[45%,52%] border py-6 md:py-14 bg-gradient-to-r from-secondary bg-secondary/50 to-black/70 rounded-3xl justify-center innercontainer mx-auto ">
-                <div className="relative order-2 lg:order-1 ">
-                    {/* Analytics Graph */}
-                    
-                    <div className="absolute -left-8 md:-left-20 -top-10  z-20  rounded-3xl  ">
-                        <div className="flex items-end space-x-2">
-                            <img
-                                src="/home/pattern1.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[100px] md:max-w-[130px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
-                    <div className="absolute right-4 -bottom-16  z-20  rounded-3xl  ">
-                        <div className="flex items-end space-x-2">
-                            <img
-                                src="/home/pattern3.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[130px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Main Image */}
-                    <div className="relative z-10">
-                        <div data-aos="zoom-in" className="overflow-hidden rounded-3xl relative">
-                            {/* Background Element */}
-                            <div className="absolute bottom-0 bg-gradient-to-tr from-primary to-secondary z-0 h-[70%] w-full"></div>
-
-                            {/* Foreground Image */}
-                            <img 
-                                src="/home/highest-security.png"
-                                alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" className="order-1 lg:order-2">
-                    <div className="space-y-6">
-                        {/* Badge */}
-                        <span variant="secondary" className="px-4 border inline rounded-full bg-white !-mb-6 font-bold text-primary  py-2  text-sm">
-                            About Cloudsave🔥
-                        </span>
-
-                        {/* Heading */}
-                        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[60px] lg:text-5xl text-white">
-                            Simple Reports & Analytics Backdown As It
+            <h1 className=" text-2xl md:text-4xl font-[500] text-center mb-8 tracking-tight md:!leading-[60px] lg:text-5xl text-white">
+                            Simple comparison as our services
                         </h1>
 
-                        {/* Description */}
-                        <p className="text-base text-gray-300 font-[500] text-muted-foreground">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use
-                        </p>
-
-                        {/* Feature List */}
-                        <ul className="space-y-4 text-white">
-                            <li data-aos="fade-up" className="flex items-center space-x-3">
-                                <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='  text-base md:text-lg'>With our Technological and Marketing Solutions.</span>
-                            </li>
-                            <li data-aos="fade-up" data-aos-delay="150" className="flex items-center space-x-3">
-                                 <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='  text-base md:text-lg'>We are trusted all over the world.</span>
-                            </li>
-                            <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
-                                <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='  text-base md:text-lg'>Start Your 14 Days Free Trials Today!</span>
-                            </li>
-                        </ul>
-
-                        {/* CTA Button */}
-                       
-                    </div>
+                          {/* Grid Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="bg-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-20 h-20 mb-4 object-contain"
+            />
+            <div className='space-y-2'>
+            <h3 className="text-xl text-white font-[400] tracking-wider">{item.title}</h3>
+            <p className="text-purple-400 font-bold text-4xl ">{item.price}</p>
+            <p className="text-gray-200 font-bold text-sm">{item.pricedesc}</p>
+            <p className="text-gray-300 text-xs font-light tracking-wider mt-2">{item.pricebased}</p>
                 </div>
-            </div>
-
+          </div>
+        ))}
+      </div>
+      <p className='text-gray-400 tracking-wide mt-8 text-[15px]  '>* Logos and trademarks used on this site are for informational and educational purposes only. All trademarks and logos are the property of their respective owners, and no endorsement or affiliation is implied.</p>
+            
         
         </div>
   )

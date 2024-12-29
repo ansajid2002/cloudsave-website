@@ -89,13 +89,13 @@ const NewHeader = () => {
         <div className="w-8 lg:w-12 h-8 lg:h-12 rounded-full flex lg:hidden justify-center items-center cursor-pointer relative -mr-2 z-30">
           {mobileMenu ? (
             <VscChromeClose
-              className="text-[20px]"
-              color="#000"
+              className="text-[20px]" strokeWidth={1}
+              color="#fff"
               onClick={() => setMobileMenu(false)}
             />
           ) : (
             <BiMenuAltRight
-  color="#000"
+  color="#fff"
   className="text-[30px]"
   onClick={() => {
     setMobileMenu(true);
