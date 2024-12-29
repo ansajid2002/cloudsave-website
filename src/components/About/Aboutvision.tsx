@@ -17,7 +17,7 @@ const Aboutvision = () => {
 
                     {/* Description */}
                     <p className=" text-base md:text-lg mb-2 text-gray-300 font-[500] text-muted-foreground">
-                        When <span className='text-white underline'>Sahil Ansari</span> and <span className='text-white underline'>Sajid Ansari</span> founded CloudSave, they wanted more than just a product—they wanted to spark a movement. Their belief in democratizing technology drives CloudSave to challenge industry norms and redefine what’s possible in the cloud.
+                        When <span className='text-white '>Sahil Ansari</span> and <span className='text-white '>Sajid Ansari</span> founded CloudSave, they wanted more than just a product—they wanted to spark a movement. Their belief in democratizing technology drives CloudSave to challenge industry norms and redefine what’s possible in the cloud.
                     </p>
 
                 </div>
@@ -63,9 +63,9 @@ const Aboutvision = () => {
                                 We’re here to disrupt the status quo of cloud storage with a vision that’s as audacious as it is transformative:
                             </p>
 
-                            <p><span className='underline'>Free Cloud Storage for All:</span> Imagine a world where storage is no longer a premium service but a basic right. We’re building that world—one user at a time.</p>
-                            <p><span className='underline'>Unmatched Security:</span> Your data deserves the best. That’s why we deploy military-grade encryption, cutting-edge technologies, and constant vigilance to ensure your files are safe, always.</p>
-                            <p><span className='underline'>Innovation at Its Core:</span> From intuitive interfaces to seamless integrations, CloudSave combines simplicity with advanced technology to give you the best of both worlds.</p>
+                            <p><span className=''>Free Cloud Storage for All:</span> Imagine a world where storage is no longer a premium service but a basic right. We’re building that world—one user at a time.</p>
+                            <p><span className=''>Unmatched Security:</span> Your data deserves the best. That’s why we deploy military-grade encryption, cutting-edge technologies, and constant vigilance to ensure your files are safe, always.</p>
+                            <p><span className=''>Innovation at Its Core:</span> From intuitive interfaces to seamless integrations, CloudSave combines simplicity with advanced technology to give you the best of both worlds.</p>
 
 
 
@@ -115,9 +115,9 @@ const Aboutvision = () => {
 
                             <h3 className=' text-3xl md:text-4xl text-purple-400 font-[500]'>What Makes Us Different?</h3>
 
-                            <p><span className='underline'>Limitless Possibilities:</span>Say goodbye to storage caps, upload limits, and hidden fees. CloudSave removes barriers so you can focus on what matters most.</p>
-                            <p><span className='underline'>Earn as You Save:</span> Break the mold with our innovative rewards system—earn coins just by using CloudSave and redeem them for exclusive services.</p>
-                            <p><span className='underline'>Global Accessibility:</span>No matter who you are or where you are, CloudSave is designed to empower users across the globe.</p>
+                            <p><span className=''>Limitless Possibilities:</span>Say goodbye to storage caps, upload limits, and hidden fees. CloudSave removes barriers so you can focus on what matters most.</p>
+                            <p><span className=''>Earn as You Save:</span> Break the mold with our innovative rewards system—earn coins just by using CloudSave and redeem them for exclusive services.</p>
+                            <p><span className=''>Global Accessibility:</span>No matter who you are or where you are, CloudSave is designed to empower users across the globe.</p>
 
 
 

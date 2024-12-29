@@ -24,7 +24,7 @@ const Page = async({params}:any) => {
 
   
     return (
-    <div className='text-white mt-32 sjcontainer'>
+    <div className='text-white mt-24 md:mt-32 sjcontainer'>
         <h1 className='text-3xl mb-10 md:text-5xl'>{policyData.title}</h1>
         <div className='space-y-4' dangerouslySetInnerHTML={{__html : policyData.content }} />
     </div>

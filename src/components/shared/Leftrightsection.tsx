@@ -78,18 +78,18 @@ const Leftrightsection = () => {
                             <li data-aos="fade-up" className="flex items-center space-x-3">
                             <MdDoubleArrow size={20} className='min-w-5'/>
 
-                                <span className='text-[15px]'><span className='underline'>Advanced Encryption:</span> Your files are protected with state-of-the-art encryption both during transfer and at rest.</span>
+                                <span className='text-[15px]'><span className=''>Advanced Encryption:</span> Your files are protected with state-of-the-art encryption both during transfer and at rest.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="150" className="flex items-center space-x-3">
                                 
                                        <MdDoubleArrow size={20} className='min-w-5'/>
                                 
-                                <span className='text-[15px]'><span className='underline'>Global Standards Compliance:</span> CloudSave adheres to industry-leading certifications and regulations, ensuring your data is stored safely.</span>
+                                <span className='text-[15px]'><span className=''>Global Standards Compliance:</span> CloudSave adheres to industry-leading certifications and regulations, ensuring your data is stored safely.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
                             <MdDoubleArrow size={20} className='min-w-5'/>
 
-                                <span className='text-[15px]'><span className='underline'>24/7 Monitoring:</span> Our infrastructure is monitored round the clock to prevent unauthorized access and ensure uninterrupted service.</span>
+                                <span className='text-[15px]'><span className=''>24/7 Monitoring:</span> Our infrastructure is monitored round the clock to prevent unauthorized access and ensure uninterrupted service.</span>
                             </li>
                         </ul>
                         <p className="text-base text-gray-300 font-[500] text-muted-foreground">

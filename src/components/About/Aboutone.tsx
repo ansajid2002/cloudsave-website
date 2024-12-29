@@ -59,7 +59,7 @@ const Aboutone = () => {
 
                         {/* Description */}
                         <p className="text-base md:text-lg text-gray-400 font-[500] text-muted-foreground">
-                        Founded by  <span className='font-bold underline text-gray-200'>Sahil Ansari</span> and <span className='font-bold text-gray-200 underline'>Sajid Ansari</span>, our mission is to create a world where secure, reliable, and unlimited cloud storage is accessible to everyone—for free
+                        Founded by  <span className='font-bold  text-gray-200'>Sahil Ansari</span> and <span className='font-bold text-gray-200 '>Sajid Ansari</span>, our mission is to create a world where secure, reliable, and unlimited cloud storage is accessible to everyone—for free
                         </p>
                         
                        

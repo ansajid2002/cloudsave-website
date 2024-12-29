@@ -10,12 +10,12 @@ const MenuMobile = ({
 
   return (
     <>
-      <ul className="flex flex-col lg:hidden font-normal bg-gray-900 text-white text-base absolute top-[8svh] h-[100vh] left-0 w-full bg-transparent border-t  z-50">
+      <ul className="flex flex-col lg:hidden font-normal bg-gray-950 text-white text-base absolute top-[8svh] h-[100vh] left-0 w-full  border-t  z-50">
         {menuData.map((item) => {
           return (
             <React.Fragment key={item.id}>
              
-                <li className="py-4 px-5 border-b">
+                <li className="py-4 px-5">
                   <Link
                     href={item?.url}
                     onClick={() => setMobileMenu(false)}

@@ -14,7 +14,7 @@ const Homebanner2 = () => {
     return (
         <div className='px-2 md:px-6  '>
 
-            <div className="relative rounded-[50px] pt-20 overflow-hidden  bannercontainer  bg-gradient-to-r z-0 mt-4 md:mt-7 from-secondary/70 text-white via-secondary/80 to-black">
+            <div className="relative rounded-[50px] pt-10 overflow-hidden  bannercontainer  bg-gradient-to-r z-0 mt-4 md:mt-7 from-secondary/70 text-white via-secondary/80 to-black">
                 <div className="absolute  inset-0 bg-grid-black/[0.02] bg-[size:20px_20px]" />
                 <div className=" relative">
                     <div className="grid  lg:grid-cols-2 gap-8 items-end ">

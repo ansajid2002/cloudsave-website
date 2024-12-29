@@ -1,6 +1,7 @@
+"use client"
 import { ArrowRight, ChevronRight, Cloud, Link, Usb } from 'lucide-react';
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const data = [
     {
@@ -41,6 +42,28 @@ const advantages = [
   
 
 const Homebanner = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [email, setEmail] = useState("");
+    const [error, setError] = useState("");
+  
+    const handleModalToggle = () => {
+      setIsModalOpen(!isModalOpen);
+      setEmail(""); // Reset email input when closing modal
+      setError(""); // Reset error message
+    };
+  
+    const handleSubmit = () => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.")
+        // setError("");
+      } else {
+        setError("");
+        alert("Email submitted: " + email);
+        handleModalToggle(); // Close the modal after submission
+      }
+    };
     return (
         <div >
 
@@ -74,7 +97,7 @@ const Homebanner = () => {
                                 }
                             </div>
                             <div className="flex w-full md:mt-14 ">
-                                <div size="lg" className="bg-gradient-to-tr justify-center flex items-center from-secondary to-primary hover:opacity-70 border border-secondary cursor-pointer hover:bg-secondary max-sm:text-sm  mx-auto md:w-[35%] text-center text-white px-6 py-2.5 rounded-full   duration-300 ">
+                                <div onClick={()=>setIsModalOpen(true)}  className="bg-gradient-to-tr justify-center flex items-center from-secondary to-primary hover:opacity-70 border border-secondary cursor-pointer hover:bg-secondary max-sm:text-sm  mx-auto md:w-[35%] text-center text-white px-6 py-2.5 rounded-full   duration-300 ">
                                     Get Started Now <ArrowRight size={16} className='ml-1.5'/>
                                 </div>
                                
@@ -86,7 +109,37 @@ const Homebanner = () => {
             </div>
         </div>
 
-
+        {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            className="bg-black w-[400px] p-10 pt-6 rounded-lg max-w-sm shadow-2xl border border-purple-400 relative"
+          >
+            <h2 className="text-3xl text-gray-200 font-semibold">Get Notified</h2>
+            <input
+              type="email"
+              className="w-full my-4 pl-4 h-8 rounded-md"
+              placeholder="Enter Email Here..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+      
+            <button
+              className="px-4 tracking-wider py-1 bg-purple-600 text-white rounded-sm hover:bg-purple-700"
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+            <button
+              className="absolute top-2 right-2 w-6 h-6 tracking-wider bg-purple-600 text-white rounded-md hover:bg-purple-700"
+              onClick={handleModalToggle}
+            >
+              X
+            </button>
+          </div>
+        </div>
+      )}
         <div className='  mx-3 lg:max-w-[950px] lg:mx-auto bg-gradient-to-r border border-secondary from-secondary py-4  via-secondary/70  rounded-3xl  mt-14 mb-10  to-black'>
 
         <div className="md:flex md:justify-center md:space-x-2 lg:space-x-10 max-md:mx-auto max-md:w-[350px] ">

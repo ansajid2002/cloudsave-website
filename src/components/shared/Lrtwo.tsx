@@ -66,20 +66,20 @@ const Leftrightsectiontwo = () => {
                         <ul className="space-y-4 text-white">
                             <li data-aos="fade-up" className="flex items-center space-x-3">
                                 <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='text-[15px]'><span className='underline'>Download Statistics:</span> Monitor how many times your files have been downloaded and by whom.</span>
+                                <span className='text-[15px]'><span className=''>Download Statistics:</span> Monitor how many times your files have been downloaded and by whom.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="150" className="flex items-center space-x-3">
                                 <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='text-[15px]'><span className='underline'>Access Logs:</span> View timestamps and user details for every access attempt, ensuring transparency and control.</span>
+                                <span className='text-[15px]'><span className=''>Access Logs:</span> View timestamps and user details for every access attempt, ensuring transparency and control.</span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
                                 <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='text-[15px]'><span className='underline'>Engagement Insights:</span> See likes, comments, and interactions on shared files within groups or teams.
+                                <span className='text-[15px]'><span className=''>Engagement Insights:</span> See likes, comments, and interactions on shared files within groups or teams.
                                 </span>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="300" className="flex items-center space-x-3">
                                  <MdDoubleArrow size={20} className='min-w-5'/>
-                                <span className='text-[15px]'><span className='underline'>Link Activity:</span> Track the performance of your shared links, including expiration dates and download limits
+                                <span className='text-[15px]'><span className=''>Link Activity:</span> Track the performance of your shared links, including expiration dates and download limits
                                 </span>
                             </li>
                         </ul>
