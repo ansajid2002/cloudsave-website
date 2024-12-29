@@ -13,7 +13,7 @@ const urbanist = Urbanist({
   weight:["400","500","700","300"]
 })
 
-
+export const BACKEND_URL=`https://policies.cloudsave.storypost.in`
 
 export const menuData = [
 

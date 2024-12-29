@@ -1,9 +1,10 @@
+import { BACKEND_URL } from '@/app/layout';
 import { promises } from 'dns';
 import React from 'react'
 
 export async function getpolicydata(slug) {
   try {
-    const response = await fetch(`${process.env.BACKEND_URL}/wp-json/custom-api/v1/policy/${slug}`)
+    const response = await fetch(`${BACKEND_URL}/wp-json/custom-api/v1/policy/${slug}`)
     const data = await response.json();
     return data;
   } catch (error) {

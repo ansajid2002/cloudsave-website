@@ -1,3 +1,4 @@
+import { BACKEND_URL } from "@/app/layout";
 import { Facebook, MailIcon, PhoneCall } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 
 export async function getallpolicies() {
   try {
-    const response = await fetch(`${process.env.BACKEND_URL}/wp-json/custom-api/v1/policies`)
+    const response = await fetch(`${BACKEND_URL}/wp-json/custom-api/v1/policies`)
     const data = await response.json();
     return data;
   } catch (error) {
