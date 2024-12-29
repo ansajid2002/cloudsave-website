@@ -67,7 +67,7 @@ const Leftrightsectionthree = () => {
                     <div className="space-y-6">
                         {/* Badge */}
                         <span variant="secondary" className="px-4 border inline rounded-full bg-white !-mb-6 font-bold text-primary  py-2  text-sm">
-                            About Siyahfy🔥
+                            About Cloudsave🔥
                         </span>
 
                         {/* Heading */}

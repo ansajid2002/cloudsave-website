@@ -50,7 +50,7 @@ const Homeone = () => {
                     <div className="space-y-6">
                         {/* Badge */}
                         <span variant="secondary" className="px-4 !-mb-6 font-bold text-purple-500 block py-2  text-sm">
-                            About Siyahfy🔥
+                            About Cloudsave🔥
                         </span>
 
                         {/* Heading */}

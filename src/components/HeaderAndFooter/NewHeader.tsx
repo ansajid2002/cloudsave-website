@@ -43,7 +43,7 @@ const NewHeader = () => {
         <img
           src="/logo/cloudsave.png"
           className="w-[150px] lg:w-[240px] "
-          alt="Siyahfy"
+          alt="Cloudsave"
           onClick={() => setMobileMenu(false)}
         />
       </Link>
@@ -81,7 +81,7 @@ const NewHeader = () => {
           <img
             src="/logo/cloudsave.png"
             className="w-[150px] "
-            alt="Siyahfy"
+            alt="Cloudsave"
             onClick={() => setMobileMenu(false)}
           />
         </Link>
