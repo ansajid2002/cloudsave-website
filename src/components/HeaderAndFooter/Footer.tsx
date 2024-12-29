@@ -6,28 +6,11 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 
 
-export async function getallpolicies() {
-  try {
-    const response = await fetch(`${BACKEND_URL}/wp-json/custom-api/v1/policies`)
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log(error,"ERROR FETCHING POLICIES");
-    
-  }
-}
-
-
-const legalAndSupportLinks = [
-  { name: "FAQs", url: "/faqs" },
-  { name: "Terms & Conditions", url: "/terms-conditions" },
-  { name: "Privacy Policy", url: "/privacy-policy" },
-];
 
 
 
-const Footer =async () => {
-  const allPolicies = await getallpolicies()
+const Footer =async ({allPolicies}:any) => {
+
   // console.log(allPolicies,"allPoliciesallPolicies");
   
   const currentYear = new Date().getFullYear();

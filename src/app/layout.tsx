@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
+
 // import localFont from "next/font/local";
 import "./globals.css";
 import NewHeader from "@/components/HeaderAndFooter/NewHeader";
-import Footer from "@/components/HeaderAndFooter/Footer";
+// import Footer from "@/components/HeaderAndFooter/Footer";
 import AosComp from "@/components/AOS/Aos";
 import LenisWrapper from "@/components/LenisWrapper";
 import NextTopLoader from "nextjs-toploader";
 import {Urbanist} from 'next/font/google'
-
+import Footer from "@/components/HeaderAndFooter/Footer";
+import { Metadata } from 'next';
 const urbanist = Urbanist({
   subsets : ["latin"],
   weight:["400","500","700","300"]
@@ -23,17 +24,30 @@ export const menuData = [
   { name: "Contact Us", url: "/contact-us" },
 ];
 
+export async function getallpolicies() {
+  try {
+    const response = await fetch(`${BACKEND_URL}/wp-json/custom-api/v1/policies`)
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error,"ERROR FETCHING POLICIES");
+    
+  }
+}
 
-export default function RootLayout({
+
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const allPolicies = await getallpolicies()
+
   return (
     <html lang="en">
-    <head>
-    <meta name="google-site-verification" content="bWGm3-jxS9PSf2eolaN9eUclvxEr4debm9TaTWmFq2k" />
-    </head>
+   
     <body
       className={`${urbanist.className} antialiased`}
     >
@@ -44,7 +58,7 @@ export default function RootLayout({
       {/* <Announcement /> */}
       <NewHeader />
       {children}
-      <Footer />
+      <Footer allPolicies={allPolicies} />
       </LenisWrapper>
     </body>
   </html>
