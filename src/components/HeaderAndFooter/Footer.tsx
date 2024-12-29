@@ -39,7 +39,7 @@ const Footer =async () => {
       <div className="space-y-6 bg-transparent overflow-hidden container mx-auto">
         <div className="md:flex   justify-between mx-auto ">
           {/* Company Info */}
-          <div className="mb-10">
+          <div className="mb-8">
             <img
               src="/home/cslogo-black.png"
               className="mr-5 w-[60px] md:w-[90px] mb-2 "
@@ -69,7 +69,7 @@ const Footer =async () => {
           
         </div>
         {/* <hr /> */}
-        <div className="w-full h-[1px] !mt-12 bg-gray-500"></div>
+        <div className="w-full h-[1px] !mt-6 md:!mt-12 bg-gray-500"></div>
         <p className="text-sm xl:text-sm md:text-center">
           © {currentYear} All Rights Reserved{" "}
           <a
