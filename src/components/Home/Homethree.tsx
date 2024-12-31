@@ -72,7 +72,7 @@ const Homethree = () => {
                             </li>
                         </ul>
                         {/* Description */}
-                        <p className="text-base text-gray-300 font-[400] text-muted-foreground">
+                        <p data-aos="fade-up" className="text-base text-gray-300 font-[400] text-muted-foreground">
                         Discover a storage platform that rewards your usage while removing all the limits. Join CloudSave today and experience a truly user-focused cloud solution!</p>
 
                         {/* CTA Button */}

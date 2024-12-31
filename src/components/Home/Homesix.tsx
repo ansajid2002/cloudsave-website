@@ -50,8 +50,8 @@ export default function FAQSection() {
           Frequently asked questions
         <h2 className="text-xl mb-4"></h2>
         </div>
-        <p className=" text-white text-muted-foreground text-3xl md:text-5xl font-[500]">
-        Work smarter with easy access for user..
+        <p className=" text-white text-muted-foreground text-2xl md:text-5xl font-[500]">
+        Work smarter with easy access for user.
         </p>
       </div>
         <div className="grid gap-x-20 mt-6 md:mt-12 md:grid-cols-[40%,55%] items-start">
@@ -123,7 +123,7 @@ function AccordionItem({
         onClick={onClick}
         aria-expanded={isOpen}
       >
-        <span className=" text-gray-200 font-[600] text-lg">{question}</span>
+        <span className=" text-gray-200 font-[600] text-base md:text-lg">{question}</span>
         <MdDoubleArrow
           className={`w-5 h-5 text-purple-500 transition-transform duration-200 ${
             isOpen ? "transform rotate-90" : ""
@@ -139,7 +139,7 @@ function AccordionItem({
           maxHeight: isOpen ? contentRef.current?.scrollHeight : 0
         }}
       >
-        <div className="px-6 pb-4 text-gray-300 font-[500]">{answer}</div>
+        <div className="px-6 pb-4 text-gray-400 font-[500]">{answer}</div>
       </div>
 
     </div>

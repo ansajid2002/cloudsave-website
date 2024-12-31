@@ -84,7 +84,7 @@ const Leftrightsectiontwo = () => {
                             </li>
                         </ul>
  {/* Description */}
- <p className="text-base text-gray-300 font-[500] text-muted-foreground">
+ <p data-aos="fade-up" className="text-base text-gray-300 font-[500] text-muted-foreground">
  Stay informed and in control with CloudSave’s comprehensive insights for shared files. Whether you’re collaborating with a team or sharing with friends, we keep you updated every step of the way.</p>
                         {/* CTA Button */}
                         

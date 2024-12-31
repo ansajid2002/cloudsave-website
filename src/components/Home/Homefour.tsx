@@ -45,7 +45,7 @@ export default function FeaturesSection() {
         🔥
         </span>
         </div>
-        <h1 className=" text-3xl md:text-4xl font-[500] tracking-tight md:!leading-[55px] lg:text-5xl text-white">
+        <h1 className=" text-2xl md:text-4xl font-[500] tracking-tight md:!leading-[55px] lg:text-5xl text-white">
         Upgrade to CloudSave Premium and unlock exclusive features designed for power users:
         </h1>
       </div>

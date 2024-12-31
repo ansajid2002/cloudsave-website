@@ -7,7 +7,7 @@ import React from 'react'
 
 const Aboutus = () => {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <Sectionbanner title="About Us" />
         <Aboutone/>
         <Aboutvision/>

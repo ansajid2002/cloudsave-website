@@ -92,7 +92,7 @@ const Leftrightsection = () => {
                                 <span className='text-[15px]'><span className=''>24/7 Monitoring:</span> Our infrastructure is monitored round the clock to prevent unauthorized access and ensure uninterrupted service.</span>
                             </li>
                         </ul>
-                        <p className="text-base text-gray-300 font-[500] text-muted-foreground">
+                        <p data-aos="fade-up" className="text-base text-gray-300 font-[500] text-muted-foreground">
                         Trust CloudSave to keep your data secure while providing unmatched storage capacity and reliability. Your files, our responsibility.
 
                         </p>

@@ -10,7 +10,7 @@ const MenuMobile = ({
 
   return (
     <>
-      <ul className="flex flex-col lg:hidden font-normal bg-gray-950 text-white text-base absolute top-[8svh] h-[100vh] left-0 w-full  border-t  z-50">
+      <ul className="flex flex-col lg:hidden font-normal bg-gray-950 text-white text-base absolute top-[8svh] h-[100vh] left-0 w-full  border-t mt-3  z-50">
         {menuData.map((item) => {
           return (
             <React.Fragment key={item.id}>

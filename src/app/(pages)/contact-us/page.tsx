@@ -59,7 +59,7 @@ export default function ContactForm() {
   );
 
   return (
-    <div className=" relative mt-16 md:mt-36 md:py-10">
+    <div className=" relative mt-24 md:mt-36 md:py-10">
       <div className="bg-black/50 flex items-center justify-center">
         <div className="bg-gray-950 rounded-lg w-full max-w-4xl overflow-hidden flex">
           {/* Left Side */}
@@ -82,7 +82,7 @@ export default function ContactForm() {
           </div>
 
           {/* Right Side */}
-          <div className="p-8 flex-1">
+          <div className=" p-4 md:p-8 flex-1">
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h2 className="text-2xl text-white font-bold">GET IN TOUCH</h2>
@@ -90,8 +90,8 @@ export default function ContactForm() {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-4">
                 {renderInput('firstName', 'text', 'First Name', User)}
                 {renderInput('lastName', 'text', 'Last Name', User)}
               </div>

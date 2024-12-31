@@ -54,8 +54,8 @@ export default function PricingTable() {
       <div className="container px-4 mx-auto md:px-6">
         <div className="flex flex-col gap-8">
           {/* Header */}
-          <div className="md:flex max-md:space-y-6 items-center justify-between">
-      <h2 className="text-3xl font-bold">Comprehensive Pricing</h2>
+          <div className="md:flex max-md:space-y-3 items-center justify-between">
+      <h2 className=" text-2xl md:text-3xl font-bold">Comprehensive Pricing</h2>
       <div className="flex items-center gap-4">
         <span  className={` ${!isYearly ? " text-white " : "text-gray-500"} text-base`}>Bill Monthly</span>
         

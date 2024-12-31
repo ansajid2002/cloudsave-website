@@ -11,7 +11,7 @@ const Aboutvision = () => {
 
                 <div className='md:container md:px-10'>
                     {/* Heading */}
-                    <h1 className=" text-3xl md:text-4xl mb-4 font-bold tracking-tight md:!leading-[60px] lg:text-5xl">
+                    <h1 className=" text-2xl md:text-4xl mb-4 font-bold tracking-tight md:!leading-[60px] lg:text-5xl">
                         Your data. Your freedom.
                     </h1>
 
@@ -83,12 +83,12 @@ const Aboutvision = () => {
 
                         <div className="relative order-2 lg:order-1 ">
 
-                            <div data-aos="zoom-in" className="absolute left-4 top-2  z-20    ">
+                            <div data-aos="zoom-in" className="absolute left-4 -top-6 md:top-2  z-20    ">
                                 <div className="flex items-end space-x-2">
                                     <img
                                         src="/logo/cloudsave.png"
                                         alt="Analytics Dashboard Preview"
-                                        className="object-cover max-w-[100px] md:max-w-[120px] mx-auto w-full h-full relative z-10"
+                                        className="object-cover max-w-[120px] md:max-w-[120px] mx-auto w-full h-full relative z-10"
                                     />
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ const Aboutvision = () => {
                                     {/* Foreground Image */}
                                     <img data-aos="fade-left"
                                         src="/home/cslogo-black.png"
-                                        className="object-cover  max-w-[300px] mx-auto w-full h-full relative z-10"
+                                        className="object-cover  max-w-[180px] md:max-w-[300px] mx-auto w-full h-full relative z-10"
                                     />
                                 </div>
                             </div>

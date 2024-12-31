@@ -38,7 +38,7 @@ const Aboutone = () => {
                             <img data-aos="fade-left"
                                 src="/about/men1.png"
                                 alt="Analytics Dashboard Preview"
-                                className="object-cover max-w-[450px] mx-auto w-full h-full relative z-10"
+                                className="object-cover max-w-[260px] sm:max-w-[450px] mx-auto w-full h-full relative z-10"
                             />
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Aboutone = () => {
                         </span>
 
                         {/* Heading */}
-                        <h1 className="text-3xl font-bold tracking-tight lg:!leading-[55px] text-white lg:text-5xl">
+                        <h1 className=" text-2xl md:text-3xl font-bold tracking-tight lg:!leading-[55px] text-white lg:text-5xl">
                         Welcome to CloudSave, where we are redefining the future of cloud storage
                         </h1>
 
