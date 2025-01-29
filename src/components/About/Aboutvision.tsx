@@ -17,7 +17,7 @@ const Aboutvision = () => {
 
                     {/* Description */}
                     <p className=" text-base md:text-lg mb-2 text-gray-300 font-[500] text-muted-foreground">
-                        When <span className='text-white '>Sahil Ansari</span> and <span className='text-white '>Zuveriya shaikh</span> founded CloudSave, they wanted more than just a product—they wanted to spark a movement. Their belief in democratizing technology drives CloudSave to challenge industry norms and redefine what’s possible in the cloud.
+                        When <span className='text-white '>Sahil Ansari</span> and <span className='text-white '>Zuveriya Shaikh</span> founded CloudSave, they wanted more than just a product—they wanted to spark a movement. Their belief in democratizing technology drives CloudSave to challenge industry norms and redefine what’s possible in the cloud.
                     </p>
 
                 </div>
