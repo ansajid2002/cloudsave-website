@@ -1,15 +1,24 @@
-import { BACKEND_URL } from "@/app/layout";
+
 import { Facebook, MailIcon, PhoneCall } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 
+const allPolicies = [
+  {
+    name:"Privacy policy",
+    slug:"privacy-policy"
+  },
+  {
+    name:"Terms of Service",
+    slug:"terms-of-service"
+  }
+]
 
 
 
-
-const Footer =async ({allPolicies}:any) => {
+const Footer =async () => {
 
   // console.log(allPolicies,"allPoliciesallPolicies");
   

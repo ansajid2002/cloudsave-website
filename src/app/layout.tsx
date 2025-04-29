@@ -14,7 +14,7 @@ const urbanist = Urbanist({
   weight:["400","500","700","300"]
 })
 
-export const BACKEND_URL=`https://policies.cloudsave.storypost.in`
+// export const BACKEND_URL=`https://policies.cloudsave.storypost.in`
 
 export const menuData = [
 
@@ -24,16 +24,7 @@ export const menuData = [
   { name: "Contact Us", url: "/contact-us" },
 ];
 
-export async function getallpolicies() {
-  try {
-    const response = await fetch(`${BACKEND_URL}/wp-json/custom-api/v1/policies`)
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log(error,"ERROR FETCHING POLICIES");
-    
-  }
-}
+
 
 
 
@@ -43,7 +34,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const allPolicies = await getallpolicies()
+  // const allPolicies = await getallpolicies()
 
   return (
     <html lang="en">
@@ -58,7 +49,7 @@ export default async function RootLayout({
       {/* <Announcement /> */}
       <NewHeader />
       {children}
-      <Footer allPolicies={allPolicies} />
+      <Footer  />
       </LenisWrapper>
     </body>
   </html>
